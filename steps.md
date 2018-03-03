@@ -1,4 +1,3 @@
-
 node -v
 npm -v
 
@@ -34,3 +33,6 @@ npm install --save express body-parser morgan body-parser serve-favicon
 
 mkdir bin
 create new file:  ./bin/www
+
+edit file: www
+
