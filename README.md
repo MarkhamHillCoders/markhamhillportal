@@ -16,4 +16,8 @@ All submissions should be to your own branch and create a pull request and (for 
 
 > testing routes works: http://localhost:3000/profile
 
+Time to install the DB
+
+npm install --save mongoose bluebird
+
 > Week 3
