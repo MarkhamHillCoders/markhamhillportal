@@ -25,12 +25,13 @@
     "core-js": "^2.4.1",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
+    "npm": "^5.7.1",
     "rxjs": "^5.5.6",
     "serve-favicon": "^2.4.5",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular-devkit/core": "^0.4.2",
+    "@angular-devkit/core": "^0.4.3",
     "@angular/cli": "~1.7.1",
     "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
