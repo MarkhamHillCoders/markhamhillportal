@@ -32,7 +32,8 @@
   	go to this url: localhost:4200
 > localhost:4200
 	
-===========
+
+
 # Part 2
 
 >  npm install --save express body-parser morgan body-parser serve-favicon
@@ -59,3 +60,20 @@ for example:
    │     Run npm i -g npm to update      │
    │                                     │
    ╰─────────────────────────────────────╯
+
+
+# Part 3
+
+
+
+# Part 4
+
+
+
+# Part 5
+
+
+
+
+
+
