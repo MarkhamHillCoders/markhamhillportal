@@ -6,10 +6,14 @@
 
 All submissions should be to your own branch and create a pull request and (for now) Daniel (only *) will push it to Master. (* Until everyone is on the same page and knows what they/you are doing.) 
 
- Our site is published at https://markhamhillcoders.github.io/markhamhillportal/
+> Our site is published at https://markhamhillcoders.github.io/markhamhillportal/
 
- Follow the Steps there, to get started.
+> Follow the Steps there, to get started.
 
- Week 1: http://localhost:4200/ with ng serve
+## Week 1: http://localhost:4200/ with ng serve
 
- Week 2: http://localhost:3000/ with npm start
+## Week 2: http://localhost:3000/ with npm start
+
+> testing routes works: http://localhost:3000/profile
+
+> Week 3
