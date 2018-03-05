@@ -49,3 +49,13 @@
 ----------------------------------------------------------------
 
 
+Be sure you are using the most current / stable version:
+
+for example:
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.6.0 → 5.7.1    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
