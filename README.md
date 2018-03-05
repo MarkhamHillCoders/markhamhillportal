@@ -9,4 +9,7 @@ All submissions should be to your own branch and create a pull request and (for 
  Our site is published at https://markhamhillcoders.github.io/markhamhillportal/
 
  Follow the Steps there, to get started.
- 
+
+ Week 1: http://localhost:4200/ with ng serve
+
+ Week 2: http://localhost:3000/ with npm start
