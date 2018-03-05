@@ -61,6 +61,10 @@ for example:
    │                                     │
    ╰─────────────────────────────────────╯
 
+Install Typescript, update version if older.
+
+npm install typescript@'>=2.4.2 <2.7.0'
+
 
 # Part 3
 
