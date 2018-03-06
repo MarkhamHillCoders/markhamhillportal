@@ -53,6 +53,7 @@
 
 > npm install --save mongoose bluebird
 
+> npm install --save-dev jest
 
 
 ----------------------------------------------------------------
