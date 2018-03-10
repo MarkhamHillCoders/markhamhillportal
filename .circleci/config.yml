@@ -37,7 +37,7 @@ jobs:
           prefix: tests
       - run:
           name: angular-lint
-          command: yarn lint -- --formatters-dir ./tslint-formatters --format junit -o tslint.xml
+          command: yarn lint -- --formatters-dir ./tslint-formatters --format junit -o tslint.xml --ignore-engines
       - store_artifacts:
           path: tslint.xml
           prefix: lint
