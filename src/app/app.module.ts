@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ProfileComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule
