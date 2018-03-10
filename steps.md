@@ -65,3 +65,9 @@
 ----------------------------------------------------------------
 
 # Part 5
+
+
+Daniel's misc debugging snippets
+
+  npm install typescript@'>=2.4.2 <2.7.0'
+  
