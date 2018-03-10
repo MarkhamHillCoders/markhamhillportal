@@ -31,8 +31,8 @@
 ####  open new browser: 
   	go to this url: localhost:4200
 > localhost:4200
+	
 
-----------------------------------------------------------------
 
 # Part 2
 
@@ -49,19 +49,35 @@
 
 ----------------------------------------------------------------
 
+
+Be sure you are using the most current / stable version:
+
+for example:
+
+   ╭─────────────────────────────────────╮
+   │                                     │
+   │   Update available 5.6.0 → 5.7.1    │
+   │     Run npm i -g npm to update      │
+   │                                     │
+   ╰─────────────────────────────────────╯
+
+Install Typescript, update version if older.
+
+npm install typescript@'>=2.4.2 <2.7.0'
+
+
 # Part 3
 
-> npm install --save mongoose bluebird
 
-> npm install --save-dev jest
-
-
-----------------------------------------------------------------
 
 # Part 4
 
 
 
-----------------------------------------------------------------
-
 # Part 5
+
+
+
+
+
+
