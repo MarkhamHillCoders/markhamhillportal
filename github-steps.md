@@ -62,7 +62,9 @@ Connect your remote branch to your local branch
 ## To delete a branch
 
   $ git branch -d branch_name
+  
   OR
+  
   $ git branch -D branch_name
   
   
