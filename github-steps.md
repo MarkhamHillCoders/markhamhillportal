@@ -21,3 +21,33 @@ The `git pull` command combines two other commands, `git fetch` and `git merge`.
 
 	  master
 	* my-new-feature-branch
+
+
+## Branch management
+
+
+### Commit your code
+
+
+	$ git status
+
+    $ git add .
+
+OR 
+
+    $ git add -all
+
+    $ git commit -m "a commit message in the present tense"
+
+
+## Push your branch
+
+To push the new feature branch to the remote repo, simply do the following: 
+
+	$ git push origin my-new-feature-brach    
+
+This is a special case when working on a team and the branch I am are pushing is out of sync with the remote. To address this, it's simple, pull the latest changes:
+
+	$ git pull origin my-new-feature-branch
+    
+This will fetch and merge any changes on the remote repo into my local brach with the changes, thus now allowing you to push. 
