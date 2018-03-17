@@ -51,7 +51,6 @@ This is a special case when working on a team and the branch I am are pushing is
 	$ git pull origin my-new-feature-branch
     
 This will fetch and merge any changes on the remote repo into my local brach with the changes, thus now allowing you to push. 
-
 Connect your remote branch to your local branch
 
 Branch set up to track remote branch from origin.
