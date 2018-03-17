@@ -18,6 +18,11 @@ body {
 	grid-area: header;
 }
 
+.navbar {
+	grid-area: navbar;
+}
+
+
 .footer {
 	grid-area: footer;
 }
@@ -31,7 +36,8 @@ body {
 	display: grid;
 	grid-gap: 1em;
 	grid-template-areas:
-		"header"
+        "header"
+        "navbar"
 		"sidebar"
 		"content"
 		"sidebar2"
@@ -42,7 +48,8 @@ body {
 	.wrapper {
 		grid-template-columns: 20% auto;
 		grid-template-areas:
-			"header   header"
+            "header   header"
+            "navbar   navbar"
 			"sidebar  content"
 			"sidebar2 sidebar2"
 			"footer   footer";
@@ -54,7 +61,8 @@ body {
 		grid-gap: 20px;
 		grid-template-columns: 120px auto 120px;
 		grid-template-areas:
-			"header  header  header"
+            "header  header  header"
+            "navbar  navbar  navbar"
 			"sidebar content sidebar2"
 			"footer  footer  footer";
 		max-width: 100%;
@@ -70,6 +78,7 @@ body {
 }
 
 .header,
+.navbar,
 .footer {
 	background-color: #999;
 }
