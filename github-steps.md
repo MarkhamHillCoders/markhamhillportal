@@ -51,3 +51,23 @@ This is a special case when working on a team and the branch I am are pushing is
 	$ git pull origin my-new-feature-branch
     
 This will fetch and merge any changes on the remote repo into my local brach with the changes, thus now allowing you to push. 
+
+
+## Merging the code
+
+1. Make sure that I have the latest version of the feature branch from the remote repo
+
+	$ git checkout my-feature-branch
+	$ git pull origin my-feature-branch
+
+1. Make sure that the feature branch is up to date with `master`, while in the feature branch, execrate the following:
+
+	$ git pull origin master
+		
+	If there are any conflicts, best to address them here. 
+	
+1. Now that I know that the feature branch is up to date with the remote repo and that it has the latest code from `master`, I can now merge these branches. I also need to make sure that my local `master` branch is up to date as well.
+
+	$ git checkout master
+	$ git pull origin master
+	$ git merge --no-ff my-feature-branch
