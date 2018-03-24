@@ -19,7 +19,7 @@ The `git pull` command combines two other commands, `git fetch` and `git merge`.
 
     This command will create a new branch from `master` as well checkout out that new branch at the same time. Doing a `git branch` will list out the branches in my local repo and place a `*` before the branch that is checked out.  
 
-	  master
+	master
 	* my-new-feature-branch
 
 
