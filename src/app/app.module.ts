@@ -10,8 +10,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResourcesComponent } from './components/resources/resources.component';
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +18,8 @@ import { ResourcesComponent } from './components/resources/resources.component';
     FooterComponent,
     SidebarComponent,
     AboutComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule
