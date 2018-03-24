@@ -19,7 +19,7 @@ The `git pull` command combines two other commands, `git fetch` and `git merge`.
 
     This command will create a new branch from `master` as well checkout out that new branch at the same time. Doing a `git branch` will list out the branches in my local repo and place a `*` before the branch that is checked out.  
 
-	  master
+	master
 	* my-new-feature-branch
 
 
@@ -71,3 +71,21 @@ This will fetch and merge any changes on the remote repo into my local brach wit
 	$ git checkout master
 	$ git pull origin master
 	$ git merge --no-ff my-feature-branch
+=======
+Connect your remote branch to your local branch
+
+## Branch set up to track remote branch from origin.
+
+  	$ git remote add upstream <url of remote branch>
+
+  	$ git push --set-upstream origin <branch name>
+  
+## To delete a branch
+
+  	$ git branch -d branch_name
+  
+  	OR
+  
+  	$ git branch -D branch_name
+  
+  
