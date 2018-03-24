@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResourcesComponent } from './components/resources/resources.component';
+import { Sidebar2Component } from './sidebar2/sidebar2.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ResourcesComponent } from './components/resources/resources.component';
     SidebarComponent,
     AboutComponent,
     ResourcesComponent,
-    NavbarComponent
+    NavbarComponent,
+    Sidebar2Component
   ],
   imports: [
     BrowserModule
