@@ -12,6 +12,7 @@ import { ResourcesComponent } from './components/resources/resources.component';
 import { Sidebar2Component } from './sidebar2/sidebar2.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { LocationComponent } from './location/location.component';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LocationComponent } from './location/location.component';
     NavbarComponent,
     Sidebar2Component,
     PortfolioComponent,
-    LocationComponent
+    LocationComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule
