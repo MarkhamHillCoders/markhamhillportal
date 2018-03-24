@@ -51,7 +51,6 @@ This is a special case when working on a team and the branch I am are pushing is
 	$ git pull origin my-new-feature-branch
     
 This will fetch and merge any changes on the remote repo into my local brach with the changes, thus now allowing you to push. 
-<<<<<<< HEAD
 
 
 ## Merging the code
@@ -77,17 +76,16 @@ Connect your remote branch to your local branch
 
 ## Branch set up to track remote branch from origin.
 
-  $ git remote add upstream <url of remote branch>
+  	$ git remote add upstream <url of remote branch>
 
-  $ git push --set-upstream origin <branch name>
+  	$ git push --set-upstream origin <branch name>
   
 ## To delete a branch
 
-  $ git branch -d branch_name
+  	$ git branch -d branch_name
   
-  OR
+  	OR
   
-  $ git branch -D branch_name
+  	$ git branch -D branch_name
   
   
->>>>>>> 1dc7837aaeb02a496ca18471cf065c5698b900b5
