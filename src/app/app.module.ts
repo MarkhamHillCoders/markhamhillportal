@@ -10,6 +10,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResourcesComponent } from './components/resources/resources.component';
 import { Sidebar2Component } from './sidebar2/sidebar2.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { LocationComponent } from './location/location.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { Sidebar2Component } from './sidebar2/sidebar2.component';
     AboutComponent,
     ResourcesComponent,
     NavbarComponent,
-    Sidebar2Component
+    Sidebar2Component,
+    PortfolioComponent,
+    LocationComponent
   ],
   imports: [
     BrowserModule
