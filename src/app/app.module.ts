@@ -14,6 +14,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { LocationComponent } from './location/location.component';
 import { WeatherComponent } from './weather/weather.component';
 import { UserComponent } from './user/user.component';
+import { UserDetailsComponent } from './user/user-details/user-details.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { UserComponent } from './user/user.component';
     PortfolioComponent,
     LocationComponent,
     WeatherComponent,
-    UserComponent
+    UserComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule
