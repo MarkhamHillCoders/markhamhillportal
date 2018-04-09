@@ -68,6 +68,9 @@ ng g c user-list
 ng g c user-new
 
 ng g s user
+ng g c user-edit
+
+
 
 -----------------------------------------------------------
 
