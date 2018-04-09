@@ -15,6 +15,7 @@ import { LocationComponent } from './location/location.component';
 import { WeatherComponent } from './weather/weather.component';
 import { UserComponent } from './user/user.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
+import { UserListComponent } from './user/user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { UserDetailsComponent } from './user/user-details/user-details.component
     LocationComponent,
     WeatherComponent,
     UserComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule
