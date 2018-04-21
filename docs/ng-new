@@ -1,0 +1,34 @@
+ng new markhamhillportal
+
+Output:
+
+  create markhamhillportal/e2e/app.e2e-spec.ts (299 bytes)
+  create markhamhillportal/e2e/app.po.ts (208 bytes)
+  create markhamhillportal/e2e/tsconfig.e2e.json (235 bytes)
+  create markhamhillportal/karma.conf.js (923 bytes)
+  create markhamhillportal/package.json (1302 bytes)
+  create markhamhillportal/protractor.conf.js (722 bytes)
+  create markhamhillportal/README.md (1033 bytes)
+  create markhamhillportal/tsconfig.json (363 bytes)
+  create markhamhillportal/tslint.json (3012 bytes)
+  create markhamhillportal/.angular-cli.json (1252 bytes)
+  create markhamhillportal/.editorconfig (245 bytes)
+  create markhamhillportal/.gitignore (544 bytes)
+  create markhamhillportal/src/assets/.gitkeep (0 bytes)
+  create markhamhillportal/src/environments/environment.prod.ts (51 bytes)
+  create markhamhillportal/src/environments/environment.ts (387 bytes)
+  create markhamhillportal/src/favicon.ico (5430 bytes)
+  create markhamhillportal/src/index.html (304 bytes)
+  create markhamhillportal/src/main.ts (370 bytes)
+  create markhamhillportal/src/polyfills.ts (3114 bytes)
+  create markhamhillportal/src/styles.css (80 bytes)
+  create markhamhillportal/src/test.ts (642 bytes)
+  create markhamhillportal/src/tsconfig.app.json (211 bytes)
+  create markhamhillportal/src/tsconfig.spec.json (283 bytes)
+  create markhamhillportal/src/typings.d.ts (104 bytes)
+  create markhamhillportal/src/app/app.module.ts (316 bytes)
+  create markhamhillportal/src/app/app.component.html (1141 bytes)
+  create markhamhillportal/src/app/app.component.spec.ts (986 bytes)
+Project 'markhamhillportal' successfully created.
+
+
