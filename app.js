@@ -5,7 +5,10 @@ let logger = require('morgan');
 let bodyParser = require('body-parser');
 let profile = require('./routes/profile');
 let directory = require('./routes/directory');
+livereload = require('express-livereload');
 let app = express();
+
+livereload(app, config={});
 
 let mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
