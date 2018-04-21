@@ -47,11 +47,10 @@ body {
 	.wrapper {
 		grid-template-columns: 20% auto;
 		grid-template-areas:
-            "header   header"
-            "navbar   navbar"
-			"sidebar  content"
-			"content  sidebar2"
-			"footer   footer";
+            "header   header   header"
+            "navbar   navbar   navbar"
+			"sidebar  content  sidebar2"
+			"footer   footer   footer";
 	}
 }
 
