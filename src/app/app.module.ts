@@ -9,13 +9,17 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { AboutComponent } from './components/about/about.component';
 import { ResourcesComponent } from './components/resources/resources.component';
-import { Sidebar2Component } from './sidebar2/sidebar2.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { LocationComponent } from './location/location.component';
-import { WeatherComponent } from './weather/weather.component';
+import { Sidebar2Component } from './components/sidebar2/sidebar2.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { LocationComponent } from './components/location/location.component';
+import { WeatherComponent } from './components/weather/weather.component';
 import { UserComponent } from './user/user.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserListComponent } from './user/user-list/user-list.component';
+import { UserNewComponent } from './user/user-new/user-new.component';
+import { UserService } from './user/user.service';
+import { UserEditComponent } from './user/user-edit/user-edit.component';
+import { DirectoryComponent } from './components/directory/directory.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +37,15 @@ import { UserListComponent } from './user/user-list/user-list.component';
     WeatherComponent,
     UserComponent,
     UserDetailsComponent,
-    UserListComponent
+    UserListComponent,
+    UserNewComponent,
+    UserEditComponent,
+    DirectoryComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
