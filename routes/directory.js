@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 
-/* GET home page. */
+/* GET Directory page. */
 router.get('/', function(req, res, next) {
     res.send('Directory');
 });
