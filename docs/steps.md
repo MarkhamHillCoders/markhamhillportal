@@ -60,9 +60,19 @@
 
 # Part 4
 
+ng g c class user
+ng g class user
+
+ng g c user-details
+ng g c user-list
+ng g c user-new
+
+ng g s user
+ng g c user-edit
 
 
-----------------------------------------------------------------
+
+-----------------------------------------------------------
 
 # Part 5
 
