@@ -6,9 +6,9 @@ let bodyParser = require('body-parser');
 // let login = require('./routes/login');
 let profile = require('./routes/profile');
 let directory = require('./routes/directory');
-// let livereload = require('express-livereload');
 let app = express();
 
+// let livereload = require('express-livereload');
 // livereload(app, config={});
 
 let mongoose = require('mongoose');
