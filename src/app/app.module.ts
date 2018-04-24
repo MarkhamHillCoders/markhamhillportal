@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -20,10 +21,12 @@ import { UserNewComponent } from './user/user-new/user-new.component';
 import { UserService } from './user/user.service';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { DirectoryComponent } from './components/directory/directory.component';
+import { routing, appRoutingProviders } from './app.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     ProfileComponent,
     HeaderComponent,
     FooterComponent,
@@ -43,9 +46,13 @@ import { DirectoryComponent } from './components/directory/directory.component';
     DirectoryComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, routing
   ],
-  providers: [UserService],
-  bootstrap: [AppComponent]
+  providers: [ 
+    UserService, appRoutingProviders 
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
