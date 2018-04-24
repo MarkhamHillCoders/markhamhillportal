@@ -72,7 +72,11 @@ npm install typescript@'>=2.4.2 <2.7.0'
 
 # Part 4
 
+    # installation with npm
+    npm install --save auth0-js
 
+    # installation with yarn
+    yarn add auth0-js
 
 # Part 5
 
