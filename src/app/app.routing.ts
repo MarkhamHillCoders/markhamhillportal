@@ -9,7 +9,7 @@ const appRoutes: Routes = [
         path: '',
         component: HomeComponent
     }, {
-        path: 'profile',
+        path: 'login',
         component: ProfileComponent
     }
 ];

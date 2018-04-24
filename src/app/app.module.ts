@@ -48,7 +48,7 @@ import { DirectoryComponent } from './components/directory/directory.component';
     DirectoryComponent
   ],
   imports: [ BrowserModule, routing ],
-  providers: [UserService, appRoutingProviders],
-  bootstrap: [AppComponent]
+  providers: [ UserService, appRoutingProviders ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
