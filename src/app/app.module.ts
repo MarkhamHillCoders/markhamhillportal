@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { routing, appRoutingProviders } from './app.routing';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -21,7 +22,6 @@ import { UserNewComponent } from './user/user-new/user-new.component';
 import { UserService } from './user/user.service';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { DirectoryComponent } from './components/directory/directory.component';
-import { routing, appRoutingProviders } from './app.routing';
 
 @NgModule({
   declarations: [
