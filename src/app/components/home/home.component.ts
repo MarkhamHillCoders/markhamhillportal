@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-    moduleId: module.id,
-    selector: 'app-home',
-    templateUrl: 'home.component.html'
+    // moduleId: module.id,
+    selector: 'app-profile',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css']
 })
 
 export class HomeComponent { }
