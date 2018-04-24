@@ -47,8 +47,8 @@ import { DirectoryComponent } from './components/directory/directory.component';
     UserEditComponent,
     DirectoryComponent
   ],
-  imports: [BrowserModule],
-  providers: [UserService],
+  imports: [ BrowserModule, routing ],
+  providers: [UserService, appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
