@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
 import { HeaderComponent } from './components/header/header.component';
@@ -27,7 +28,7 @@ import { UserService } from './user/user.service';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 import { DirectoryComponent } from './components/directory/directory.component';
-import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
