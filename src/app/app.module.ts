@@ -22,6 +22,7 @@ import { UserService } from './user/user.service';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 import { DirectoryComponent } from './components/directory/directory.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -42,16 +43,11 @@ import { DirectoryComponent } from './components/directory/directory.component';
     UserListComponent,
     UserNewComponent,
     UserEditComponent,
-    DirectoryComponent
+    DirectoryComponent,
+    HomeComponent
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [
-    UserService
-  ],
-  bootstrap: [
-    AppComponent
-  ]
+  imports: [BrowserModule],
+  providers: [UserService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
