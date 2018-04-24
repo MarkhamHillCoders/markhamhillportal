@@ -28,3 +28,5 @@ Time Travel
 
 Let's use Firebase for Auth.
 Plan: Working on Auth Today
+
+BTW: use nodemon

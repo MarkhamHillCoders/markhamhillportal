@@ -3,11 +3,12 @@ let path = require('path');
 let favicon = require('serve-favicon');
 let logger = require('morgan');
 let bodyParser = require('body-parser');
+// let login = require('./routes/login');
 let profile = require('./routes/profile');
 let directory = require('./routes/directory');
-// let livereload = require('express-livereload');
 let app = express();
 
+// let livereload = require('express-livereload');
 // livereload(app, config={});
 
 let mongoose = require('mongoose');
@@ -19,8 +20,19 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));
+
 app.use('/profile', profile);
+// app.use('/login', login);
 app.use('/directory', directory);
+
+app.get('/about',function(req,res){
+  res.sendFile(path.join(__dirname+'/about.html'));
+});
+
+app.get('/login',function(req,res){curl
+  res.sendFile(path.join(__dirname+'/login.component.html'));
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

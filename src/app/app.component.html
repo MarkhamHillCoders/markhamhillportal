@@ -1,17 +1,19 @@
-<!-- Router Not Working -->
-<router-outlet>Router Works</router-outlet>
-
 <div class="wrapper">
+
+	<app-navbar></app-navbar>
+	
+	<!-- <div class="box navbar">
+			
+	</div> -->
+	
 	<div class="box header">
 			<app-header></app-header>
 	</div>
 
-	<div class="box navbar">
-			<app-navbar></app-navbar>
-	</div>
+	<router-outlet>Router Works</router-outlet>
 
-	<!-- Router Not Working -->
-	
+	<app-login></app-login>
+		
 	
 	<div class="box sidebar">
 		Sidebar
@@ -26,9 +28,12 @@
 	<div class="box content">
 		<h2>UserComp</h2>
 		<app-user></app-user>
+
+		<!-- 		
+			<h2>Directory</h2>		
+			<app-directory></app-directory> 
+		-->
 		
-		<h2>Directory</h2>		
-		<app-directory></app-directory>
 	</div>
 
 	<!-- 
