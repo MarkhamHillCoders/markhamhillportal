@@ -78,6 +78,10 @@ npm install typescript@'>=2.4.2 <2.7.0'
     # installation with yarn
     yarn add auth0-js
 
+    yarn add auth0-lock --save
+    yarn add angular2-jwt --save
+
+
 # Part 5
 
 

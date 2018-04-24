@@ -1,7 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
+// import { routing, appRoutingProviders } from './app.routing';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+// import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,20 +15,18 @@ import { Sidebar2Component } from './components/sidebar2/sidebar2.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { LocationComponent } from './components/location/location.component';
 import { WeatherComponent } from './components/weather/weather.component';
-
 import { UserComponent } from './user/user.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserNewComponent } from './user/user-new/user-new.component';
 import { UserService } from './user/user.service';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
-
 import { DirectoryComponent } from './components/directory/directory.component';
-import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    // HomeComponent,
     ProfileComponent,
     HeaderComponent,
     FooterComponent,
@@ -43,11 +43,18 @@ import { HomeComponent } from './home/home.component';
     UserListComponent,
     UserNewComponent,
     UserEditComponent,
-    DirectoryComponent,
-    HomeComponent
+    DirectoryComponent
   ],
-  imports: [BrowserModule],
-  providers: [UserService],
-  bootstrap: [AppComponent]
+  imports: [
+    BrowserModule,
+    // routing
+  ],
+  providers: [
+    UserService,
+    // appRoutingProviders
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
