@@ -5,13 +5,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+
 import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { Sidebar2Component } from './components/sidebar2/sidebar2.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 import { AboutComponent } from './components/about/about.component';
 import { ResourcesComponent } from './components/resources/resources.component';
-import { Sidebar2Component } from './components/sidebar2/sidebar2.component';
+
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { LocationComponent } from './components/location/location.component';
 import { WeatherComponent } from './components/weather/weather.component';
@@ -47,8 +50,9 @@ import { DirectoryComponent } from './components/directory/directory.component';
     UserEditComponent,
     DirectoryComponent
   ],
-  imports: [ BrowserModule, routing ],
+  imports:   [ BrowserModule, routing ],
   providers: [ UserService, appRoutingProviders ],
   bootstrap: [ AppComponent ]
 })
+
 export class AppModule { }
