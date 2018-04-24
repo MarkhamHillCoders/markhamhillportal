@@ -20,16 +20,16 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));
+
 app.use('/profile', profile);
 // app.use('/login', login);
 app.use('/directory', directory);
-
 
 app.get('/about',function(req,res){
   res.sendFile(path.join(__dirname+'/about.html'));
 });
 
-app.get('/login',function(req,res){
+app.get('/login',function(req,res){curl
   res.sendFile(path.join(__dirname+'/login.component.html'));
 });
 
