@@ -46,10 +46,12 @@ import { routing, appRoutingProviders } from './app.routing';
     DirectoryComponent
   ],
   imports: [
-    BrowserModule, routing
+    BrowserModule,
+    routing
   ],
-  providers: [ 
-    UserService, appRoutingProviders 
+  providers: [
+    UserService,
+    appRoutingProviders
   ],
   bootstrap: [
     AppComponent
