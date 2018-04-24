@@ -21,3 +21,10 @@ Time to install the DB
 npm install --save mongoose bluebird
 
 > Week 3
+
+Time Travel
+
+> Week of 12:42 PM 2018-04-24
+
+Let's use Firebase for Auth.
+Plan: Working on Auth Today
