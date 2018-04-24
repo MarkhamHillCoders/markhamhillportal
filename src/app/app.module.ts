@@ -27,6 +27,7 @@ import { UserService } from './user/user.service';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 import { DirectoryComponent } from './components/directory/directory.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { DirectoryComponent } from './components/directory/directory.component';
     UserListComponent,
     UserNewComponent,
     UserEditComponent,
-    DirectoryComponent
+    DirectoryComponent,
+    LoginComponent
   ],
   imports:   [ BrowserModule, routing ],
   providers: [ UserService, appRoutingProviders ],
