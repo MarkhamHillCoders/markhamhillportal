@@ -29,4 +29,8 @@ Time Travel
 Let's use Firebase for Auth.
 Plan: Working on Auth Today
 
-BTW: use nodemon
+BTW: use nodemon, but found annoying bug, which kept restarting nodemon, created a nodemon.json file to fix the bug
+
+    Use:  nodemon --dump 
+    OR: 
+    nodemon --verbose

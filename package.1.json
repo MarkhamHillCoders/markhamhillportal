@@ -3,12 +3,17 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",    
+    "ng": "ng",
+    "load": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "start": "ng build && node ./bin/www",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "webdriver:update": "webdriver-manager update"    
   },
   "private": true,
   "dependencies": {
@@ -46,6 +51,7 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "8.9.0",
     "codelyzer": "^4.2.1",
+    "http-server": "^0.9.0",
     "jasmine-core": "~3.1.0",
     "jasmine-spec-reporter": "~4.2.1",
     "jest": "^22.4.2",
