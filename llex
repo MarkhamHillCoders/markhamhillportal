@@ -1,0 +1,161 @@
+warning: LF will be replaced by CRLF in src/app/app.module.ts.
+The file will have its original line endings in your working directory.
+[1mdiff --git a/src/app/app.component.html b/src/app/app.component.html[m
+[1mindex ec3933c..a3a70f5 100644[m
+[1m--- a/src/app/app.component.html[m
+[1m+++ b/src/app/app.component.html[m
+[36m@@ -1,5 +1,3 @@[m
+[31m-<!-- <router-outlet></router-outlet> -->[m
+[31m-[m
+ <div class="wrapper">[m
+ 	<div class="box header">[m
+ 			<app-header></app-header>[m
+[1mdiff --git a/src/app/app.module.ts b/src/app/app.module.ts[m
+[1mindex a348c34..7d99def 100644[m
+[1m--- a/src/app/app.module.ts[m
+[1m+++ b/src/app/app.module.ts[m
+[36m@@ -22,6 +22,7 @@[m [mimport { UserService } from './user/user.service';[m
+ import { UserEditComponent } from './user/user-edit/user-edit.component';[m
+ [m
+ import { DirectoryComponent } from './components/directory/directory.component';[m
+[32m+[m[32mimport { HomeComponent } from './home/home.component';[m
+ [m
+ @NgModule({[m
+   declarations: [[m
+[36m@@ -42,16 +43,11 @@[m [mimport { DirectoryComponent } from './components/directory/directory.component';[m
+     UserListComponent,[m
+     UserNewComponent,[m
+     UserEditComponent,[m
+[31m-    DirectoryComponent[m
+[32m+[m[32m    DirectoryComponent,[m
+[32m+[m[32m    HomeComponent[m
+   ],[m
+[31m-  imports: [[m
+[31m-    BrowserModule[m
+[31m-  ],[m
+[31m-  providers: [[m
+[31m-    UserService[m
+[31m-  ],[m
+[31m-  bootstrap: [[m
+[31m-    AppComponent[m
+[31m-  ][m
+[32m+[m[32m  imports: [BrowserModule],[m
+[32m+[m[32m  providers: [UserService],[m
+[32m+[m[32m  bootstrap: [AppComponent][m
+ })[m
+ export class AppModule { }[m
+[1mdiff --git a/src/app/app.routing.1.js b/src/app/app.routing.1.js[m
+[1mdeleted file mode 100644[m
+[1mindex e730bd0..0000000[m
+[1m--- a/src/app/app.routing.1.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,18 +0,0 @@[m
+[31m-"use strict";[m
+[31m-let router_1 = require('@angular/router');[m
+[31m-let home_component_1 = require('./components/home/home.component');[m
+[31m-let profile_component_1 = require('./components/profile/profile.component');[m
+[31m-[m
+[31m-let appRoutes = [[m
+[31m-    {[m
+[31m-        path: '',[m
+[31m-        component: home_component_1.HomeComponent[m
+[31m-    },[m
+[31m-    {[m
+[31m-        path: 'profile',[m
+[31m-        component: profile_component_1.ProfileComponent[m
+[31m-    }[m
+[31m-];[m
+[31m-[m
+[31m-exports.appRoutingProviders = [];[m
+[31m-exports.routing = router_1.RouterModule.forRoot(appRoutes);[m
+\ No newline at end of file[m
+[1mdiff --git a/src/app/app.routing.1.ts b/src/app/app.routing.1.ts[m
+[1mdeleted file mode 100644[m
+[1mindex ea86d3a..0000000[m
+[1m--- a/src/app/app.routing.1.ts[m
+[1m+++ /dev/null[m
+[36m@@ -1,19 +0,0 @@[m
+[31m-import { ModuleWithProviders } from '@angular/core';[m
+[31m-import { Routes, RouterModule } from '@angular/router';[m
+[31m-[m
+[31m-import { HomeComponent } from './components/home/home.component';[m
+[31m-import { ProfileComponent } from './components/profile/profile.component';[m
+[31m-[m
+[31m-const appRoutes: Routes = [[m
+[31m-    {[m
+[31m-        path: '',[m
+[31m-        component: HomeComponent[m
+[31m-    }, {[m
+[31m-        path: 'profile',[m
+[31m-        component: ProfileComponent[m
+[31m-    }[m
+[31m-];[m
+[31m-[m
+[31m-export const appRoutingProviders: any[] = [];[m
+[31m-[m
+[31m-export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);[m
+[1mdiff --git a/src/app/components/home1/home.component.css b/src/app/components/home1/home.component.css[m
+[1mdeleted file mode 100644[m
+[1mindex e69de29..0000000[m
+[1mdiff --git a/src/app/components/home1/home.component.html b/src/app/components/home1/home.component.html[m
+[1mdeleted file mode 100644[m
+[1mindex ed85441..0000000[m
+[1m--- a/src/app/components/home1/home.component.html[m
+[1m+++ /dev/null[m
+[36m@@ -1 +0,0 @@[m
+[31m-<h3>Welcome Home</h3>[m
+\ No newline at end of file[m
+[1mdiff --git a/src/app/components/home1/home.component.spec.ts b/src/app/components/home1/home.component.spec.ts[m
+[1mdeleted file mode 100644[m
+[1mindex 490e81b..0000000[m
+[1m--- a/src/app/components/home1/home.component.spec.ts[m
+[1m+++ /dev/null[m
+[36m@@ -1,25 +0,0 @@[m
+[31m-import { async, ComponentFixture, TestBed } from '@angular/core/testing';[m
+[31m-[m
+[31m-import { HomeComponent } from './home.component';[m
+[31m-[m
+[31m-describe('HomeComponent', () => {[m
+[31m-  let component: HomeComponent;[m
+[31m-  let fixture: ComponentFixture<HomeComponent>;[m
+[31m-[m
+[31m-  beforeEach(async(() => {[m
+[31m-    TestBed.configureTestingModule({[m
+[31m-      declarations: [ HomeComponent ][m
+[31m-    })[m
+[31m-    .compileComponents();[m
+[31m-  }));[m
+[31m-[m
+[31m-  beforeEach(() => {[m
+[31m-    fixture = TestBed.createComponent(HomeComponent);[m
+[31m-    component = fixture.componentInstance;[m
+[31m-    fixture.detectChanges();[m
+[31m-  });[m
+[31m-[m
+[31m-  it('should create', () => {[m
+[31m-    expect(component).toBeTruthy();[m
+[31m-  });[m
+[31m-});[m
+[1mdiff --git a/src/app/components/home1/home.component.ts b/src/app/components/home1/home.component.ts[m
+[1mdeleted file mode 100644[m
+[1mindex f0ba948..0000000[m
+[1m--- a/src/app/components/home1/home.component.ts[m
+[1m+++ /dev/null[m
+[36m@@ -1,17 +0,0 @@[m
+[31m-import { Component, OnInit } from '@angular/core';[m
+[31m-[m
+[31m-@Component({[m
+[31m-    // moduleId: module.id,[m
+[31m-    selector: 'app-home',[m
+[31m-    templateUrl: './home.component.html',[m
+[31m-    styleUrls: ['./home.component.css'][m
+[31m-})[m
+[31m-[m
+[31m-export class HomeComponent implements OnInit {[m
+[31m-[m
+[31m-    constructor() { }[m
+[31m-[m
+[31m-    ngOnInit() {[m
+[31m-    }[m
+[31m-[m
+[31m-}[m

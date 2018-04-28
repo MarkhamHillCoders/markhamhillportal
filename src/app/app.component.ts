@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import 'rxjs/add/operator/map';
 
 @Component({
@@ -7,6 +6,7 @@ import 'rxjs/add/operator/map';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
   title = 'Markham Hill Portal';
 }
