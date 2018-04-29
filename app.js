@@ -21,13 +21,13 @@ app.use(express.static(path.join(__dirname, 'dist')));
 app.use('/profile', profile);
 app.use('/directory', directory);
 
-app.get('/about',function(req,res){
-  res.sendFile(path.join(__dirname+'/about.html'));
-});
+// app.get('/about',function(req,res){
+//   res.sendFile(path.join(__dirname+'/about.html'));
+// });
 
-app.get('/login',function(req,res){curl
-  res.sendFile(path.join(__dirname+'/login.component.html'));
-});
+// app.get('/login',function(req,res){curl
+//   res.sendFile(path.join(__dirname+'/login.component.html'));
+// });
 
 // NEW catch 404 and forward to error 404 handler
 app.use(function (err, req, res, next) {
