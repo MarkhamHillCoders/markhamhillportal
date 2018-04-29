@@ -18,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { AboutComponent } from './components/about/about.component';
 import { ResourcesComponent } from './components/resources/resources.component';
+import { RouterModule, Routes } from '@angular/router';
 
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { LocationComponent } from './components/location/location.component';
@@ -34,9 +35,9 @@ import { DirectoryComponent } from './components/directory/directory.component';
 
 const appRoutes: Routes = [
   {
-    path: 'books',
-    component: BookComponent,
-    data: { title: 'Book List' }
+    path: 'members',
+    component: MembersComponent,
+    data: { title: 'Members List' }
   },
   { path: '',
     redirectTo: '/books',
