@@ -32,6 +32,7 @@ import { UserService } from './user/user.service';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 import { DirectoryComponent } from './components/directory/directory.component';
+import { MemberComponent } from './member/member.component';
 
 const appRoutes: Routes = [
   {
@@ -66,7 +67,8 @@ const appRoutes: Routes = [
     UserNewComponent,
     UserEditComponent,
     DirectoryComponent,
-    LoginComponent
+    LoginComponent,
+    MemberComponent
   ],
   imports: [
     BrowserModule,
