@@ -17,8 +17,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));
 
-app.use('/profile', profile);
 // app.use('/login', login);
+app.use('/profile', profile);
 app.use('/directory', directory);
 
 app.get('/about',function(req,res){
@@ -29,14 +29,7 @@ app.get('/login',function(req,res){curl
   res.sendFile(path.join(__dirname+'/login.component.html'));
 });
 
-// catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//     let err = new Error('Not Found');
-//   err.status = 404;
-//   next(err);
-// });
-
-// NEW catch 404 and forward to error handler
+// NEW catch 404 and forward to error 404 handler
 app.use(function (err, req, res, next) {
   res.status(err.status || 404);
   next(err);
@@ -49,13 +42,12 @@ app.use(function (err, req, res, next) {
 // error handler
 app.use(function(err, req, res, next) {
   
-  // set locals, only providing error in development
+  // set locals & provide error in dev.
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  // res.render('error');
+  // render the error 500 page
+  res.status(err.status || 500);  
   next(err);
 });
 
