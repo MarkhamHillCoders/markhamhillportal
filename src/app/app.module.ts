@@ -33,6 +33,7 @@ import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 import { DirectoryComponent } from './components/directory/directory.component';
 import { MemberComponent } from './member/member.component';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -68,7 +69,8 @@ const appRoutes: Routes = [
     UserEditComponent,
     DirectoryComponent,
     LoginComponent,
-    MemberComponent
+    MemberComponent,
+    MemberDetailComponent
   ],
   imports: [
     BrowserModule,
