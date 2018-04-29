@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders } from './app.routing';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -15,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 import { AboutComponent } from './components/about/about.component';
 import { ResourcesComponent } from './components/resources/resources.component';
+import { RouterModule, Routes } from '@angular/router';
 
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { LocationComponent } from './components/location/location.component';
@@ -28,7 +32,19 @@ import { UserService } from './user/user.service';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 import { DirectoryComponent } from './components/directory/directory.component';
+import { MemberComponent } from './member/member.component';
 
+const appRoutes: Routes = [
+  {
+    path: 'members',
+    component: MemberComponent,
+    data: { title: 'Members List' }
+  },
+  { path: '',
+    redirectTo: '/members',
+    pathMatch: 'full'
+  }
+];
 
 @NgModule({
   declarations: [
@@ -51,9 +67,19 @@ import { DirectoryComponent } from './components/directory/directory.component';
     UserNewComponent,
     UserEditComponent,
     DirectoryComponent,
-    LoginComponent
+    LoginComponent,
+    MemberComponent
   ],
-  imports:   [ BrowserModule, routing ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    routing,
+    HttpClientModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // For debugging!
+    )
+  ],
   providers: [ UserService, appRoutingProviders ],
   bootstrap: [ AppComponent ]
 })

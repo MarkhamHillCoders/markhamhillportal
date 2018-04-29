@@ -11,10 +11,9 @@ let app = express();
 // let livereload = require('express-livereload');
 // livereload(app, config={});
 
-// let mongoose = require('mongoose');
-// mongoose.Promise = require('bluebird');
-// mongoose.connect('mongodb://localhost/markhamhill-portal', { promiseLibrary: require('bluebird') })
-//   .then(() =>  console.log('Connection Succesful')).catch((err) => console.error(err));
+let mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
+mongoose.connect('mongodb://localhost/markhamhill-portal', { promiseLibrary: require('bluebird') }).then(() =>  console.log('Connection Succesful')).catch((err) => console.error(err));
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
