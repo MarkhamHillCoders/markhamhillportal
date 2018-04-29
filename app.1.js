@@ -3,10 +3,13 @@ let path = require('path');
 let favicon = require('serve-favicon');
 let logger = require('morgan');
 let bodyParser = require('body-parser');
-let app = express();
-
+// let login = require('./routes/login');
 let profile = require('./routes/profile');
 let directory = require('./routes/directory');
+let app = express();
+
+// let livereload = require('express-livereload');
+// livereload(app, config={});
 
 let mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
@@ -29,21 +32,12 @@ app.get('/login',function(req,res){curl
   res.sendFile(path.join(__dirname+'/login.component.html'));
 });
 
-// catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//     let err = new Error('Not Found');
-//   err.status = 404;
-//   next(err);
-// });
 
-// NEW catch 404 and forward to error handler
-app.use(function (err, req, res, next) {
-  res.status(err.status || 404);
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+    let err = new Error('Not Found');
+  err.status = 404;
   next(err);
-  res.render('error', {
-      message: err.message,
-      error: {}
-  });
 });
 
 // error handler
@@ -55,8 +49,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  // res.render('error');
-  next(err);
+  res.render('error');
 });
 
 module.exports = app;

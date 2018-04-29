@@ -3,10 +3,13 @@ let path = require('path');
 let favicon = require('serve-favicon');
 let logger = require('morgan');
 let bodyParser = require('body-parser');
-let app = express();
-
+// let login = require('./routes/login');
 let profile = require('./routes/profile');
 let directory = require('./routes/directory');
+let app = express();
+
+// let livereload = require('express-livereload');
+// livereload(app, config={});
 
 let mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
