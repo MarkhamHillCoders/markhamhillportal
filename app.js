@@ -5,7 +5,7 @@ let logger = require('morgan');
 let bodyParser = require('body-parser');
 let app = express();
 
-let profile = require('./routes/login');
+let login = require('./routes/login');
 let profile = require('./routes/profile');
 let directory = require('./routes/directory');
 
