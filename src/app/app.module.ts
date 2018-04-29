@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { routing, appRoutingProviders } from './app.routing';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
@@ -29,6 +32,17 @@ import { UserEditComponent } from './user/user-edit/user-edit.component';
 
 import { DirectoryComponent } from './components/directory/directory.component';
 
+const appRoutes: Routes = [
+  {
+    path: 'books',
+    component: BookComponent,
+    data: { title: 'Book List' }
+  },
+  { path: '',
+    redirectTo: '/books',
+    pathMatch: 'full'
+  }
+];
 
 @NgModule({
   declarations: [
@@ -53,7 +67,12 @@ import { DirectoryComponent } from './components/directory/directory.component';
     DirectoryComponent,
     LoginComponent
   ],
-  imports:   [ BrowserModule, routing ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    routing,
+    HttpClientModule
+  ],
   providers: [ UserService, appRoutingProviders ],
   bootstrap: [ AppComponent ]
 })
