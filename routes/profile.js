@@ -1,7 +1,7 @@
 let express = require('express');
 let router = express.Router();
 
-/* GET home page. */
+/* GET Profile Page. */
 router.get('/', function(req, res, next) {
     res.send('Profile Page');
 });

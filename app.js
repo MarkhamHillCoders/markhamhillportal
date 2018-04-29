@@ -10,14 +10,14 @@ let directory = require('./routes/directory');
 
 let mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost/markhamhill-portal', { promiseLibrary: require('bluebird') }).then(() =>  console.log('Connection Succesful')).catch((err) => console.error(err));
+mongoose.connect('mongodb://localhost/markhamhill-portal', { promiseLibrary: require('bluebird') }).then(() => console.log('Connection Succesful')).catch((err) => console.error(err));
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended':'false'}));
 app.use(express.static(path.join(__dirname, 'dist')));
 
-// app.use('/login', login);
+app.use('/login', login);
 app.use('/profile', profile);
 app.use('/directory', directory);
 
