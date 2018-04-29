@@ -37,11 +37,11 @@ import { MemberComponent } from './member/member.component';
 const appRoutes: Routes = [
   {
     path: 'members',
-    component: MembersComponent,
+    component: MemberComponent,
     data: { title: 'Members List' }
   },
   { path: '',
-    redirectTo: '/books',
+    redirectTo: '/members',
     pathMatch: 'full'
   }
 ];
@@ -74,7 +74,11 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     routing,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true } // For debugging!
+    )
   ],
   providers: [ UserService, appRoutingProviders ],
   bootstrap: [ AppComponent ]
