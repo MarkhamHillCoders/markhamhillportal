@@ -60,8 +60,27 @@
 
 # Part 4
 
+ng g c class user
+ng g class user
+
+ng g c user-details
+ng g c user-list
+ng g c user-new
+
+ng g s user
+ng g c user-edit
+
+
+
+-----------------------------------------------------------
+
+# Part 5
 
 
 ----------------------------------------------------------------
 
-# Part 5
+## Issues
+
+Daniel's misc debugging snippets
+
+  npm install typescript@'>=2.4.2 <2.7.0'
