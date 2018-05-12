@@ -21,6 +21,8 @@ Time to install the DB
 npm install --save mongoose bluebird
 
 > Week 3
+<<<<<<< HEAD
+=======
 
 Time Travel
 
@@ -36,3 +38,4 @@ BTW: use nodemon, but found annoying bug, which kept restarting nodemon, created
     nodemon --verbose
 
 Something seems broken - going to fix it later
+>>>>>>> fixbuild
