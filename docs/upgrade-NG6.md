@@ -42,3 +42,12 @@ rxjs-5-to-6-migrate -p src/tsconfig.app.json
 
 
 Once you and all of your dependencies have updated to RxJS 6, remove rxjs-compat.
+
+-----------
+Package not installed: "@angular/material". Skipping.
+We analyzed your package.json, there are some packages to update:
+
+    Name                               Version                  Command to update
+    --------------------------------------------------------------------------------
+    @angular/core                      5.2.6 -> 6.0.1           ng update @angular/core
+    rxjs                               5.5.6 -> 6.1.0           ng update rxjs
