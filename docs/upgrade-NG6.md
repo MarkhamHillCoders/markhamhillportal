@@ -51,3 +51,17 @@ We analyzed your package.json, there are some packages to update:
     --------------------------------------------------------------------------------
     @angular/core                      5.2.6 -> 6.0.1           ng update @angular/core
     rxjs                               5.5.6 -> 6.1.0           ng update rxjs
+
+    -----------------
+
+
+    We analyzed your package.json, there are some packages to update:
+
+    Name                               Version                  Command to update
+    --------------------------------------------------------------------------------
+    @angular/core                      5.2.6 -> 6.0.1           ng update @angular/core
+    rxjs                               5.5.6 -> 6.1.0           ng update rxjs
+
+
+    There might be additional packages that are outdated.
+    Or run ng update --all to try to update all at the same time.
