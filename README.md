@@ -21,3 +21,18 @@ Time to install the DB
 npm install --save mongoose bluebird
 
 > Week 3
+
+Time Travel
+
+> Week of 12:42 PM 2018-04-24
+
+Let's use Firebase for Auth.
+Plan: Working on Auth Today
+
+BTW: use nodemon, but found annoying bug, which kept restarting nodemon, created a nodemon.json file to fix the bug
+
+    Use:  nodemon --dump 
+    OR: 
+    nodemon --verbose
+
+Something seems broken - going to fix it later
