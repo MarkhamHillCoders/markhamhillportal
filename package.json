@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "ng": "ng",    
+    "ng": "ng",
     "start": "ng build && node ./bin/www",
     "build": "ng build --prod",
     "test": "ng test",
@@ -12,8 +12,6 @@
   },
   "private": true,
   "dependencies": {
-    "concurrently": "^3.0.0",
-    "lite-server": "^2.2.2",
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
@@ -28,8 +26,10 @@
     "auth0-lock": "^11.5.2",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
+    "concurrently": "^3.0.0",
     "core-js": "^2.4.1",
     "express": "^4.16.2",
+    "lite-server": "^2.2.2",
     "mongoose": "^5.0.8",
     "morgan": "^1.9.0",
     "rxjs": "^6.0.0",
