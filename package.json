@@ -37,8 +37,8 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.5.0",
-    "@angular-devkit/core": "^0.4.5",
     "@angular/cli": "^6.0.1",
+    "@angular-devkit/core": "^0.5.10",
     "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
     "@types/jasmine": "~2.8.3",
@@ -52,10 +52,10 @@
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "^1.4.2",
     "karma-jasmine": "~1.1.0",
-    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-jasmine-html-reporter": "^1.0.0",
     "protractor": "~5.3.0",
-    "ts-node": "~5.0.1",
+    "ts-node": "~6.0.2",
     "tslint": "~5.9.1",
-    "typescript": "*"
+    "typescript": "~2.8.3"
   }
 }
