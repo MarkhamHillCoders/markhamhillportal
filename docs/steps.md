@@ -104,3 +104,6 @@ Adding Auth with firebase
 
 New Branch: autho
 
+==================================
+
+ng build --prod --base-href="https://markhamhillcoders.github.io/markhamhillportal/"
