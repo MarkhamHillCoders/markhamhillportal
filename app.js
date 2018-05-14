@@ -18,9 +18,16 @@ let profile = require('./routes/profile');
 let directory = require('./routes/directory');
 >>>>>>> fixbuild
 
+<<<<<<< HEAD
+// let mongoose = require('mongoose');
+// mongoose.Promise = require('bluebird');
+// mongoose.connect('mongodb://localhost/markhamhill-portal', { promiseLibrary: require('bluebird') })
+//   .then(() =>  console.log('Connection Succesful')).catch((err) => console.error(err));
+=======
 let mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 mongoose.connect('mongodb://localhost/markhamhill-portal', { promiseLibrary: require('bluebird') }).then(() => console.log('Connection Succesful')).catch((err) => console.error(err));
+>>>>>>> d0579b9318117485f86cb457f5ef9c9d7027a57d
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
