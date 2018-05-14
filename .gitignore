@@ -45,3 +45,6 @@ testem.log
 Thumbs.db
 nodemon.json
 .private
+
+package-lock.json
+yarn.lock
