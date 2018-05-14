@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -21,7 +20,7 @@ import { UserComponent } from './user/user.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserNewComponent } from './user/user-new/user-new.component';
-import { UserService } from './user/user.service';
+import { UserService } from './users/user.service';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { DirectoryComponent } from './components/directory/directory.component';
 import { MemberComponent } from './member/member.component';
@@ -62,7 +61,10 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     HttpClientModule
   ],
-  providers: [UserService],
-  bootstrap: [AppComponent]
+  exports: [
+    RouterModule
+  ],
+  providers: [ UserService ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
