@@ -35,14 +35,6 @@ import { FirebaseConfig } from '../environments/firebase.config';
 // import { AngularFireAuthModule } from 'angularfire2/auth';
 // import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-<<<<<<< HEAD
-=======
-const routes: Routes = [
-  { path: 'members', component: UsersComponent },
-  { path: 'dashboard', component: DashboardComponent }
-];
-
->>>>>>> master
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +54,6 @@ const routes: Routes = [
     UserListComponent,
     UserNewComponent,
     UserEditComponent,
-<<<<<<< HEAD
     DirectoryComponent
   ],
   imports: [
@@ -70,29 +61,5 @@ const routes: Routes = [
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
-=======
-    DirectoryComponent,
-    DashboardComponent,
-    MemberComponent,
-    MemberDetailComponent,
-    LoginComponent,
-    UsersComponent
-  ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes),
-    HttpClientModule,
-    FormsModule //,
-    // AngularFireModule.initializeApp(FirebaseConfig.firebase),
-    // AngularFirestoreModule,
-    // AngularFireAuthModule,
-    // AngularFireDatabaseModule
-  ],
-  exports: [
-    RouterModule
-  ],
-  providers: [ UserService ],
-  bootstrap: [ AppComponent ]
->>>>>>> master
 })
 export class AppModule { }
