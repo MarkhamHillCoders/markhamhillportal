@@ -8,17 +8,17 @@ import { Component, OnInit } from '@angular/core';
 
 export class LoginComponent implements OnInit {
 
-  // form: FormGroup;
+  form: FormGroup;
 
-  // constructor(private fb: FormBuilder,
-  //   private authService: AuthService,
-  //   private router: Router) {
+  constructor(private fb: FormBuilder,
+    private authService: AuthService,
+    private router: Router) {
 
-  //   this.form = this.fb.group({
-  //     email: ['', Validators.required],
-  //     password: ['', Validators.required]
-  //   });
-  // }
+    this.form = this.fb.group({
+      email: ['', Validators.required],
+      password: ['', Validators.required]
+    });
+  }
 
   // login() {
   //   const val = this.form.value;
