@@ -76,7 +76,8 @@ ng g c user-edit
 
 # Part 5
 
-
+npm install angularfire2
+npm install firebase@4.6.1
 ----------------------------------------------------------------
 
 ## Issues
@@ -84,3 +85,35 @@ ng g c user-edit
 Daniel's misc debugging snippets
 
   npm install typescript@'>=2.4.2 <2.7.0'
+
+-----------------------------------------------------------
+
+# Part 6
+
+Be sure you have json-server installed
+
+  json-server --watch src/data/db.json --port 4000
+
+we will be using this till we get our firebase working
+
+-----------------------------------------------------------
+
+# Part 7
+
+Adding Auth with firebase
+
+New Branch: autho
+
+==================================
+
+ng build --prod --base-href="https://markhamhillcoders.github.io/markhamhillportal/"
+
+git remote add origin https://github.com/MarkhamHillCoders/markhamhillportal.git
+
+https://github.com/MarkhamHillCoders/markhamhillportal.git
+
+----------
+
+ng build --prod --base-href "https://markhamhillcoders.github.io/markhamhillportal/"
+
+ngh 

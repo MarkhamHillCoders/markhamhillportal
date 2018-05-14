@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -20,12 +20,29 @@ import { UserComponent } from './user/user.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserNewComponent } from './user/user-new/user-new.component';
-import { UserService } from './user/user.service';
+import { UserService } from './users/user.service';
 import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { DirectoryComponent } from './components/directory/directory.component';
 import { MemberComponent } from './member/member.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { LoginComponent } from './components/login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { UsersComponent } from './users/users.component';
 
+// import { AngularFireModule } from 'angularfire2';
+import { FirebaseConfig } from '../environments/firebase.config';
+// import { AngularFirestoreModule } from 'angularfire2/firestore';
+// import { AngularFireAuthModule } from 'angularfire2/auth';
+// import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+<<<<<<< HEAD
+=======
+const routes: Routes = [
+  { path: 'members', component: UsersComponent },
+  { path: 'dashboard', component: DashboardComponent }
+];
+
+>>>>>>> master
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +62,7 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
     UserListComponent,
     UserNewComponent,
     UserEditComponent,
+<<<<<<< HEAD
     DirectoryComponent
   ],
   imports: [
@@ -52,5 +70,29 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
+=======
+    DirectoryComponent,
+    DashboardComponent,
+    MemberComponent,
+    MemberDetailComponent,
+    LoginComponent,
+    UsersComponent
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    HttpClientModule,
+    FormsModule //,
+    // AngularFireModule.initializeApp(FirebaseConfig.firebase),
+    // AngularFirestoreModule,
+    // AngularFireAuthModule,
+    // AngularFireDatabaseModule
+  ],
+  exports: [
+    RouterModule
+  ],
+  providers: [ UserService ],
+  bootstrap: [ AppComponent ]
+>>>>>>> master
 })
 export class AppModule { }

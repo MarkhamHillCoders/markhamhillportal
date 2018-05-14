@@ -1,56 +1,53 @@
+
+<div id="app">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/dashboard" class="nav-link">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/members" class="nav-link">Members</a>
+        </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
 <div class="wrapper">
 	<div class="box header">
-<<<<<<< HEAD
 			<app-header></app-header>
 	</div>
 
 	<div class="box navbar">
 			<app-navbar></app-navbar>
 	</div>
-=======
-		<app-header></app-header>
-	</div>  
-
-	<!-- Headers -->
-	
-	<h1>Welcome to the Markham Hill Portal</h1>
-	<!-- <router-outlet>Router Works</router-outlet> -->
-
-	<!-- <app-login></app-login> -->
-		
->>>>>>> fixbuild
 	
 	<div class="box sidebar">
-		News
-		<!-- <app-sidebar></app-sidebar> -->
+		Sidebar #1
+		<app-sidebar></app-sidebar>
+		[News + Updates]
 	</div>
 
 	<div class="box sidebar2">
-		Login
-		<!-- <app-sidebar2></app-sidebar2> -->
+		Sidebar #2
+		<app-sidebar2></app-sidebar2>
+		[Login Box]
 	</div>
 
 	<div class="box content">
-<<<<<<< HEAD
-		<h2>UserComp</h2>
-		<app-user></app-user>
-		
-		<h2>Directory</h2>		
-		<app-directory></app-directory>
-=======
 		<!-- <h2>UserComp</h2> -->
-		
-		<app-member></app-member>
-		<!-- 		
-			<h2>Directory</h2>		
-			<app-directory></app-directory> 
-		-->
-		
-		<hr />
-
 		<app-user></app-user>
+		
+		<!-- <h2>Directory</h2>		
+		<app-directory></app-directory>
+		<app-users></app-users> -->
 
->>>>>>> fixbuild
+		<!-- <UsersComponent></UsersComponent> -->
 	</div>
 
 	<!-- 
@@ -59,6 +56,10 @@
 			<app-directory></app-directory>
 		</div>
 	-->
+
+	<!-- <ul *ngFor="let item of items | async">
+		<li> {{item.name}}</li>
+	</ul> -->
 	
 	<div class="box footer">
 		<app-footer></app-footer>
