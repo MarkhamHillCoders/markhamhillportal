@@ -56,6 +56,10 @@
 			<app-directory></app-directory>
 		</div>
 	-->
+
+	<ul *ngFor="let item of items | async">
+		<li> {{item.name}}</li>
+	</ul>
 	
 	<div class="box footer">
 		<app-footer></app-footer>
