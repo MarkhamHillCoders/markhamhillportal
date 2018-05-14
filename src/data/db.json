@@ -1,0 +1,38 @@
+{
+    "results": [
+    {
+        "id": "1",
+        "name": "Adam",
+        "profile": "https://www.freecodecamp.org/"
+    },
+    {
+        "id": "2",
+        "name": "Jean",
+        "profile": "#"
+    },
+    {
+        "id": "3",
+        "name": "Kenneth",
+        "profile": "#"
+    },
+    {
+        "id": "4",
+        "name": "Kevin B.",
+        "profile": "#"
+    },
+    {
+        "id": "5",
+        "name": "Kevin C.",
+        "profile": "#"
+    },    
+    {
+        "id": "6",
+        "name": "Roman",
+        "profile": "#"
+    },
+    {
+        "id": "7",
+        "name": "Wayne",
+        "profile": "#"
+    }]
+}
