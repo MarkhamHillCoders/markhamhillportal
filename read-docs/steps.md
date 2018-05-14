@@ -111,3 +111,9 @@ ng build --prod --base-href="https://markhamhillcoders.github.io/markhamhillport
 git remote add origin https://github.com/MarkhamHillCoders/markhamhillportal.git
 
 https://github.com/MarkhamHillCoders/markhamhillportal.git
+
+----------
+
+ng build --prod --base-href "https://markhamhillcoders.github.io/markhamhillportal/"
+
+ngh 

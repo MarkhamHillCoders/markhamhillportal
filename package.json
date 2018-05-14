@@ -2,6 +2,7 @@
     "name": "markhamhillportal",
     "version": "2.0.0",
     "license": "MIT",
+    "homepage": "https://markhamhillcoders.github.io/markhamhillportal/",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
