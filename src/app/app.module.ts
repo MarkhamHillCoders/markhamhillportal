@@ -17,6 +17,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { LocationComponent } from './components/location/location.component';
 import { WeatherComponent } from './components/weather/weather.component';
 import { UserComponent } from './user/user.component';
+import { LoginComponent } from './components/login/login.component';
 import { UserDetailsComponent } from './user/user-details/user-details.component';
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserNewComponent } from './user/user-new/user-new.component';
@@ -54,3 +55,4 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
