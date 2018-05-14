@@ -7,6 +7,19 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+// @NgModule({
+//   imports: [
+//       RouterModule
+//   ],
+//   declarations: [
+//   ],
+//   exports: [
+//   ],
+//   providers: [
+//   ]
+// })
+
 export class AppComponent {
   title = 'Markham Hill Portal';
 }

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -25,6 +26,13 @@ import { UserEditComponent } from './user/user-edit/user-edit.component';
 import { DirectoryComponent } from './components/directory/directory.component';
 import { MemberComponent } from './member/member.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { UsersComponent } from './users/users.component';
+
+const routes: Routes = [
+  { path: 'members', component: UsersComponent },
+  { path: 'dashboard', component: DashboardComponent }
+];
 
 @NgModule({
   declarations: [
@@ -45,10 +53,14 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
     UserListComponent,
     UserNewComponent,
     UserEditComponent,
-    DirectoryComponent
+    DirectoryComponent,
+    DashboardComponent,
+    UsersComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
