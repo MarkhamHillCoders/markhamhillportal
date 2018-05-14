@@ -28,6 +28,9 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsersComponent } from './users/users.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { FirebaseConfig } from '../environments/firebase.config';
+
 const routes: Routes = [
   { path: 'members', component: UsersComponent },
   { path: 'dashboard', component: DashboardComponent }

@@ -76,7 +76,8 @@ ng g c user-edit
 
 # Part 5
 
-
+npm install angularfire2
+npm install firebase@4.6.1
 ----------------------------------------------------------------
 
 ## Issues
