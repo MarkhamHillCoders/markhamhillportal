@@ -3,13 +3,16 @@
     "name": "markhamhillportal",
     "version": "2.0.0",
     "license": "MIT",
+    "homepage": "https://markhamhillcoders.github.io/markhamhillportal/",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build --prod",
+        "hero": "node heroku.js",
         "test": "ng test",
         "lint": "ng lint",
-        "e2e": "ng e2e"
+        "e2e": "ng e2e",
+        "postinstall": "ng build --aot -prod"
     },
     "private": true,
     "dependencies": {
