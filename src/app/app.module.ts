@@ -28,6 +28,12 @@ import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsersComponent } from './users/users.component';
 
+import { AngularFireModule } from 'angularfire2';
+import { FirebaseConfig } from '../environments/firebase.config';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
 const routes: Routes = [
   { path: 'members', component: UsersComponent },
   { path: 'dashboard', component: DashboardComponent }
@@ -59,7 +65,12 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    AngularFireModule.initializeApp(FirebaseConfig.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
   exports: [
     RouterModule

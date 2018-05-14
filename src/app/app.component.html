@@ -17,3 +17,51 @@
         <router-outlet></router-outlet>
     </div>
 </div>
+
+<div class="wrapper">
+	<div class="box header">
+			<app-header></app-header>
+	</div>
+
+	<div class="box navbar">
+			<app-navbar></app-navbar>
+	</div>
+	
+	<div class="box sidebar">
+		Sidebar #1
+		<app-sidebar></app-sidebar>
+		[News + Updates]
+	</div>
+
+	<div class="box sidebar2">
+		Sidebar #2
+		<app-sidebar2></app-sidebar2>
+		[Login Box]
+	</div>
+
+	<div class="box content">
+		<!-- <h2>UserComp</h2> -->
+		<app-user></app-user>
+		
+		<!-- <h2>Directory</h2>		
+		<app-directory></app-directory>
+		<app-users></app-users> -->
+
+		<!-- <UsersComponent></UsersComponent> -->
+	</div>
+
+	<!-- 
+		<div class="box content">
+			<h2>Directory</h2>
+			<app-directory></app-directory>
+		</div>
+	-->
+
+	<ul *ngFor="let item of items | async">
+		<li> {{item.name}}</li>
+	</ul>
+	
+	<div class="box footer">
+		<app-footer></app-footer>
+	</div>
+</div>
