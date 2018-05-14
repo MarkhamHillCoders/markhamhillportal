@@ -7,7 +7,7 @@ export class UserService {
   url = 'http://localhost:4000';
   getUsers() {
     return this
-            .http
-            .get(`${this.url}/results`);
-        }
+      .http
+      .get(`${this.url}/results`);
+    }
 }
