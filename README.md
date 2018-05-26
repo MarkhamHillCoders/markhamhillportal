@@ -36,3 +36,7 @@ BTW: use nodemon, but found annoying bug, which kept restarting nodemon, created
     nodemon --verbose
 
 Something seems broken - going to fix it later
+
+Load JSON for DB
+
+json-server --watch src/data/db.json --port 4000
