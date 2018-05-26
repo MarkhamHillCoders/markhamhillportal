@@ -44,7 +44,6 @@ testem.log
 .DS_Store
 Thumbs.db
 nodemon.json
-.private
 
 package-lock.json
 yarn.lock
