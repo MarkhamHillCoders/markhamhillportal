@@ -36,3 +36,8 @@ BTW: use nodemon, but found annoying bug, which kept restarting nodemon, created
     nodemon --verbose
 
 Something seems broken - going to fix it later
+
+Load JSON for DB
+
+1. yarn global add json-server
+2. json-server --watch src/data/db.json --port 4000

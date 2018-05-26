@@ -10,7 +10,26 @@
   <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" /> -->
   <!-- Polyfill(s) for older browsers -->
+  <meta http-equiv="Content-Security-Policy"
+  content="
+  default-src 'self' 'unsafe-inline' 'unsafe-eval'
+  data:
+  blob:
+  wss:
 
+  http://*.google-analytics.com
+  http://*.googletagmanager.com
+
+  https://*.google-analytics.com          
+  https://*.googletagmanager.com
+  https://*.gstatic.com
+  https://*.googleapis.com
+  https://*.herokuapp.com
+  https://authedmine.com
+  http://localhost:4000/results
+  http://localhost:4000/
+  ws://localhost:4200;
+">
 </head>
 <body>
   <app-root>Loading ....</app-root>  
